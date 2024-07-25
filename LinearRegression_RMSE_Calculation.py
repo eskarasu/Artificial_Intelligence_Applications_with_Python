@@ -6,7 +6,8 @@ import numpy as np
 
 # Create a simple dataset
 X = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).reshape(-1, 1)
-y = np.array([2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+y = np.array([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]) # RMSE: 0.0
+# y = np.array([2, 4, 6, 8, 10, 12, 14, 16, 18, 21]) # RMSE: 0.3535533905932738
 
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=42)
